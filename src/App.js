@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button, Container, Header } from 'semantic-ui-react';
+import Contacts from './classes/Contacts';
+import {useState} from 'react';
 
 function App() {
+  const [showContacts, setShowContacts] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header as="h1">Lifecycle and Class/Function Review</Header>
+      <Button onClick={() => setShowContacts(!showContacts)}>
+        {showContacts ? "Hide Contacts" : "Show Contacts"}
+      </Button>
+      {showContacts && <Contacts />}
+      
+    </Container>
   );
 }
 
