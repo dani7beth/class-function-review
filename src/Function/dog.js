@@ -30,7 +30,7 @@ return (
 
 return(
   <div>
-  <h1>Your Dogs</h1>
+  <h1>Your Dogs as Function</h1>
   {renderDogs()}
   </div>
 );

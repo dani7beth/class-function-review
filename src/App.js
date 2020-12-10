@@ -3,7 +3,8 @@ import './App.css';
 import Dog from './Function/dog';
 import { Button, Container, Header } from 'semantic-ui-react';
 import Contacts from './classes/Contacts';
-import DogClass from './classes/DogClass'
+import DogClass from './classes/DogClass';
+import ContactsFunction from './Function/ContactsFunction';
 import {useState} from 'react';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       {showClasses && <Contacts />}
       {showFunctions && <Dog />}
       {showClasses && <DogClass />}
+      {showFunctions && <ContactsFunction />}
     </Container>
   );
 }

@@ -26,7 +26,7 @@ export default class Contacts extends React.Component{
         const {data} = this.state;
         return (
             <>
-            <Header as="h3">Contacts</Header>
+            <Header as="h3">Contacts as Class</Header>
             <List>
                 {data.map(d=>{
                     return (

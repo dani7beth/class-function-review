@@ -17,7 +17,7 @@ state ={
         
         return(
             <Container>
-                <Header>Your Dogs</Header>
+                <Header>Your Dogs as Class</Header>
                 <List>
                     {dogs.map((d)=>{
                         return(
